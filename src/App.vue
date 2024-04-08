@@ -1,17 +1,22 @@
 <template>
   <div id="app">
     <ParentComponent />
+    hallo
   </div>
 </template>
 
 <script>
-
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    ParentComponent: () => import('./components/ParentComponent.vue')
-  }
-}
+    ParentComponent: () => import("./components/ParentComponent.vue"),
+  },
+  methods: {
+    logEvent() {
+      alert("#####");
+    },
+  },
+};
 </script>
 
 <style>
